@@ -1,0 +1,41 @@
+import { FaEnvelope, FaSearch } from "react-icons/fa";
+
+interface Airplane {
+  name: string;
+  imageSrc: string;
+  price: string;
+  description: string;
+}
+
+function AirplaneCard({ name, imageSrc, price, description }: Airplane) {
+  return (
+    <div className="overflow-hidden transition duration-300 bg-white w-[22rem] min-w-[22rem] rounded-lg shadow-lg hover:shadow-xl ml-5 hover:scale-95">
+      <div
+        className="w-full h-64 bg-center bg-cover"
+        style={{ backgroundImage: `url(${imageSrc})` }}
+      ></div>
+      <div className="p-4">
+        <h2 className="mb-2 text-xl font-semibold text-gray-800">{name}</h2>
+        <p className="mb-2 text-sm text-gray-500 text-start">{description}</p>
+        <div className="flex flex-col items-center justify-between">
+          <div className="flex w-full">
+            <p className="text-lg font-semibold text-yellow-600">${price}</p>
+          </div>
+
+          <div className="flex mt-4">
+            <button className="flex items-center mr-3 text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
+              <FaEnvelope className="w-5 h-5" />
+              <span className="ml-3 text-sm">Entrar em contato</span>
+            </button>
+            <button className="flex items-center text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
+              <FaSearch className="w-5 h-5" />
+              <span className="ml-3 text-sm">Ver mais detalhes</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AirplaneCard;
