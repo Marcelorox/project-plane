@@ -1,10 +1,11 @@
+import { AboutUsHomePage } from "../aboutUs";
 import { Airplanes } from "./airplanesMenu";
 
 function Home() {
   return (
     <>
-      <main className="">
-        <section className="relative top-0 left-0 flex h-full opacity-100 w-772 z-999">
+      <main className="border-b-2">
+        <section className="relative top-0 left-0 flex h-full mt-16 opacity-100 w-772 z-999">
           <video
             muted
             autoPlay
@@ -25,7 +26,7 @@ function Home() {
             </div>
           </div>
         </section>
-
+        <AboutUsHomePage />
         <Airplanes />
       </main>
     </>

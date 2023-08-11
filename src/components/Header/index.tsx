@@ -25,7 +25,7 @@ function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between w-full h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
+      <header className="flex fixed z-50 items-center justify-between w-full h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
         <div className="flex items-center">
           <img
             className="h-16 transition-transform duration-300 hover:scale-125"

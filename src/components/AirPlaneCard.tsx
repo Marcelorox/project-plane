@@ -7,19 +7,25 @@ interface Airplane {
   description: string;
 }
 
-function AirplaneCard({ name, imageSrc, price, description }: Airplane) {
+function AirplaneCard(props: Airplane) {
   return (
     <div className="overflow-hidden transition duration-300 bg-white w-[22rem] min-w-[22rem] rounded-lg shadow-lg hover:shadow-xl ml-5 hover:scale-95">
       <div
         className="w-full h-64 bg-center bg-cover"
-        style={{ backgroundImage: `url(${imageSrc})` }}
+        style={{ backgroundImage: `url(${props.imageSrc})` }}
       ></div>
       <div className="p-4">
-        <h2 className="mb-2 text-xl font-semibold text-gray-800">{name}</h2>
-        <p className="mb-2 text-sm text-gray-500 text-start">{description}</p>
+        <h2 className="mb-2 text-xl font-semibold text-gray-800">
+          {props.name}
+        </h2>
+        <p className="mb-2 text-sm text-gray-500 text-start">
+          {props.description}
+        </p>
         <div className="flex flex-col items-center justify-between">
           <div className="flex w-full">
-            <p className="text-lg font-semibold text-yellow-600">${price}</p>
+            <p className="text-lg font-semibold text-yellow-600">
+              ${props.price}
+            </p>
           </div>
 
           <div className="flex mt-4">
