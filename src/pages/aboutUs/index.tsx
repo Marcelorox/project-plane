@@ -37,8 +37,8 @@ function AboutUsHomePage() {
           <BsAirplaneEngines />
         </div>
 
-        <div className="max-w-[28rem] text-left text-gray-400">
-          <p className="leading-relaxed">
+        <div className="max-w-[30rem] text-left text-gray-400">
+          <p className="text-lg italic leading-relaxed">
             Discover a new era of customer service where advanced technology
             harmonizes with unparalleled client focus.
           </p>
