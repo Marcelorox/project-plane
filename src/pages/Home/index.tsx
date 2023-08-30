@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
 import { AboutUsHomePage } from "../aboutUs";
+import { DescribeHomePage } from "../aboutUs/describe";
 import { Airplanes } from "./airplanesMenu";
 
 function Home() {
   return (
     <>
-      <main className="border-b-2">
+      <main className="">
         <section className="relative top-0 left-0 flex h-full mt-16 opacity-100 w-772 z-999">
           <video
             muted
@@ -20,14 +23,19 @@ function Home() {
                 ELITE JETS LUXURY PRIVATE JET COMPANY. UNPARALLELED AMENITIES,
                 PREMIUM SERVICE, SMOOTH FLIGHTS. CONTACT US TODAY.
               </p>
-              <button className="flex w-[96%] justify-center border-[1px] p-2 border-gray-900 inset-yellow-300 hover:bg-yellow-200 hover:text-black transition duration-300">
-                CATALOGO
-              </button>
+              <Link
+                className="flex w-[96%] justify-center border-[1px] p-2 border-gray-900 inset-yellow-300 hover:bg-yellow-200 hover:text-black transition duration-300"
+                to={`/catalog`}
+              >
+                <button className="">CATALOGO</button>
+              </Link>
             </div>
           </div>
         </section>
         <AboutUsHomePage />
+        <DescribeHomePage />
         <Airplanes />
+        <Footer />
       </main>
     </>
   );

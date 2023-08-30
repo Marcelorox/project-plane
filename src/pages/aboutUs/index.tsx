@@ -12,9 +12,15 @@ import {
 import { BsAirplaneEngines } from "react-icons/bs";
 
 function AboutUsHomePage() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Isso habilita o scroll suave
+    });
+  };
   return (
     <>
-      <div className="flex items-center justify-around w-full bg-gray-900 border-b-2 h-52">
+      <div className="flex items-center justify-around w-full bg-gray-900 h-52">
         <div>
           <Popover placement="bottom-end">
             <PopoverTrigger>
@@ -33,7 +39,10 @@ function AboutUsHomePage() {
             </PopoverContent>
           </Popover>
         </div>
-        <div className="text-yellow-300 transition duration-300 hover:scale-125">
+        <div
+          className="text-yellow-500 transition duration-300 hover:scale-125"
+          onClick={scrollToTop}
+        >
           <BsAirplaneEngines />
         </div>
 
@@ -44,7 +53,10 @@ function AboutUsHomePage() {
           </p>
         </div>
 
-        <div className="text-yellow-300 transition duration-300 hover:scale-125">
+        <div
+          className="text-yellow-500 transition duration-300 hover:scale-125"
+          onClick={scrollToTop}
+        >
           <BsAirplaneEngines />
         </div>
         <div>

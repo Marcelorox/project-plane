@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         custom: ["Roboto Slab", "serif"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('/public/private-jet.jpg')",
+      },
     },
   },
   plugins: [],

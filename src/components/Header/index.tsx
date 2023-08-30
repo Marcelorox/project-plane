@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.gif";
 import { useState, useEffect } from "react";
-
 function Header() {
   const sloganText = "Elevate your journey with Airplane";
   const [visibleLetters, setVisibleLetters] = useState<number[]>([]);
@@ -48,13 +48,13 @@ function Header() {
 
         <div className="flex space-x-8 font-sans text-base">
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
-            Home
+            <Link to={`/`}>Home</Link>
           </span>
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
-            Aircraft
+            <Link to={`/catalog`}>Catalog</Link>
           </span>
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
-            Contact
+            <Link to={`/contact`}>Contact</Link>
           </span>
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
             About Us

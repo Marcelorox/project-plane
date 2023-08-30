@@ -91,7 +91,6 @@ function Airplanes() {
             }`}
           />
         </div>
-        <div className="p-4"></div>
       </div>
     </>
   );
