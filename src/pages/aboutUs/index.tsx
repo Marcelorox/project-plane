@@ -15,7 +15,7 @@ function AboutUsHomePage() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Isso habilita o scroll suave
+      behavior: "smooth",
     });
   };
   return (

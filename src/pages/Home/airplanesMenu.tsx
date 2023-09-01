@@ -2,7 +2,6 @@ import { useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import AirplaneCard from "../../components/AirPlaneCard";
 import image from "../../assets/aviao.jpg";
-
 function Airplanes() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
@@ -23,6 +22,7 @@ function Airplanes() {
 
   const airplaneCards = [
     {
+      id: "1",
       name: "Antonov An-124 Ruslan.",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
@@ -30,6 +30,7 @@ function Airplanes() {
       price: "5.000.000",
     },
     {
+      id: "2",
       name: "Antonov An-124 Ruslan.",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
@@ -37,6 +38,7 @@ function Airplanes() {
       price: "5.000.000",
     },
     {
+      id: "3",
       name: "Antonov An-124 Ruslan.",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
@@ -44,6 +46,7 @@ function Airplanes() {
       price: "5.000.000",
     },
     {
+      id: "4",
       name: "Antonov An-124 Ruslan.",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
@@ -72,6 +75,7 @@ function Airplanes() {
                   description={card.description}
                   imageSrc={card.imageSrc}
                   price={card.price}
+                  id={card.id}
                 />
               ))}
             </div>

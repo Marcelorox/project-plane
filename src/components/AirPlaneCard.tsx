@@ -1,6 +1,8 @@
 import { FaEnvelope, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 interface Airplane {
+  id: string;
   name: string;
   imageSrc: string;
   price: string;
@@ -29,13 +31,18 @@ function AirplaneCard(props: Airplane) {
           </div>
 
           <div className="flex mt-4">
-            <button className="flex items-center mr-3 text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
-              <FaEnvelope className="w-5 h-5" />
-              <span className="ml-3 text-sm">Entrar em contato</span>
-            </button>
+            <Link to="/contact">
+              <button className="flex items-center mr-3 text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
+                <FaEnvelope className="w-5 h-5" />
+                <span className="ml-3 text-sm">Entrar em contato</span>
+              </button>
+            </Link>
+
             <button className="flex items-center text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
               <FaSearch className="w-5 h-5" />
-              <span className="ml-3 text-sm">Ver mais detalhes</span>
+              <span className="ml-3 text-sm" id={props.id}>
+                Ver mais detalhes
+              </span>
             </button>
           </div>
         </div>

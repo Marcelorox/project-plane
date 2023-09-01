@@ -4,8 +4,9 @@ import App from "./App.tsx";
 import "./index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Catalog } from "./pages/catalog/index.tsx";
 import ContactPage from "./pages/Contact/index.tsx";
+import CatalogPage from "./pages/catalog/index.tsx";
+import AboutPage from "./pages/aboutUs/AboutUsPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/catalog",
-    element: <Catalog />,
+    element: <CatalogPage />,
   },
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/aboutPage",
+    element: <AboutPage />,
   },
 ]);
 

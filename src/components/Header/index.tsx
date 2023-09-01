@@ -27,11 +27,13 @@ function Header() {
     <>
       <header className="flex fixed z-50 items-center justify-between w-full h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
         <div className="flex items-center">
-          <img
-            className="h-16 transition-transform duration-300 hover:scale-125"
-            src={Logo}
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="h-16 transition-transform duration-300 hover:scale-125"
+              src={Logo}
+              alt=""
+            />
+          </Link>
           <span className="inline-block ml-6 text-lg tracking-wide text-white">
             {sloganText.split("").map((letter, index) => (
               <span
@@ -57,7 +59,7 @@ function Header() {
             <Link to={`/contact`}>Contact</Link>
           </span>
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
-            About Us
+            <Link to={`/aboutPage`}>About Us</Link>
           </span>
         </div>
       </header>

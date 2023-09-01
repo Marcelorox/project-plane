@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Adicione esses estilos ao seu arquivo CSS ou componente de estilo */
 .hover-underline::after {
   content: "";
   position: absolute;
@@ -21,3 +20,16 @@
   transform: scaleX(1);
 }
 
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+}

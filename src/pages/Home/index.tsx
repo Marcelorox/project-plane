@@ -8,15 +8,16 @@ function Home() {
   return (
     <>
       <main className="">
-        <section className="relative top-0 left-0 flex h-full mt-16 opacity-100 w-772 z-999">
-          <video
-            muted
-            autoPlay
-            loop
-            playsInline
-            src="//cdn-cf-east.streamable.com/video/mp4/jq7at9.mp4?Expires=1691797620&Signature=Cv0TYewr6gfEKyjJfZX9bEpYZ-FHqKv1TCmFlx-vKlPJy3oHJNWfozIgGfMCIIDSDA08fMVplLEDnNYXt-hS4hyhEwHnH67yFuN6Q5W7BuHyH9WSOiJI66amRWk30mPwFUaPftsdB3fJmK8TUqIza~Uqq46SXUpmwieGY0SDWKgK-GSPSDXW80xA-XYonaqDQdN2nLSrQbhKLufCpsmBD21VS1y~S6-lb2Bih~OybSOz~odxzfvCUGe4KlfgH9Csk3yEzlOOVLRurof-mEXOQZDnHHlXQdPUW9PgSgC~eJtsV5dCAn8Mm8w8N0JKP3kF5ITur0R~wIoiJxlmCJ~nog__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
-            className="h-100vh w-[100%]"
-          ></video>
+        <section className="relative top-0 left-0 flex w-full h-full mt-16 opacity-100 z-999">
+          <div className="video-container">
+            <video
+              muted
+              autoPlay
+              loop
+              playsInline
+              src="https://aboveaviation.aero/wp-content/uploads/2022/10/above-aviation.mp4"
+            ></video>
+          </div>
           <div className="absolute z-10 flex justify-center w-full h-full bg-black opacity-50">
             <div className=" items-center text-sm text-center mt-[28vh] flex flex-col text-white gap-4">
               <p className="max-w-md font-mono font-bold">

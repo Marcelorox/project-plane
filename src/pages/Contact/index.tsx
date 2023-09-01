@@ -10,8 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { Header } from "../../components/Header";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const ContactPage: React.FC = () => {
   return (
@@ -61,44 +60,7 @@ const ContactPage: React.FC = () => {
             </Flex>
           </Box>
         </div>
-        <footer className="absolute bottom-0 w-full py-6 text-white bg-gray-800">
-          <div className="container flex items-center justify-between mx-auto">
-            <div>
-              <p className="ml-10">
-                &copy; {new Date().getFullYear()} Your Company. All rights
-                reserved.
-              </p>
-            </div>
-            <div>
-              <ul className="flex mr-10 space-x-4">
-                <li>
-                  <Link
-                    to="#"
-                    className="text-white transition-transform duration-300 transform hover:text-gray-400 hover:scale-110"
-                  >
-                    <FaFacebook />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="#"
-                    className="text-white transition-transform duration-300 transform hover:text-gray-400 hover:scale-110"
-                  >
-                    <FaTwitter />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="#"
-                    className="text-white transition-transform duration-300 transform hover:text-gray-400 hover:scale-110"
-                  >
-                    <FaInstagram />
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+        
       </div>
     </>
   );
