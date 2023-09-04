@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.gif";
 function HeaderCatalogPage() {
   return (
     <>
-      <header className="flex z-50 items-center justify-between w-full h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
+      <header className="flex z-50 items-center justify-between w-[100vw] h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
         <Link to="/">
           <div className="flex items-center">
             <img

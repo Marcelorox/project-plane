@@ -47,7 +47,7 @@ const Footer = () => {
             </Text>
             <Text>(11) 1111 1111 - Escritório</Text>
             <Text>(11) 1 1111 1111 - Plantão / Whatsapp</Text>
-            <Text >+1 (111) 111 1111 USA Office</Text>
+            <Text>+1 (111) 111 1111 USA Office</Text>
           </VStack>
         </Box>
       </Flex>

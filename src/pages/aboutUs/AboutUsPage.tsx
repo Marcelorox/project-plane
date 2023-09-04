@@ -1,7 +1,7 @@
 import imagemEquipe from "../../assets/equipe.jpg";
-import colaborador1 from "../../assets/equipe.jpg";
-import colaborador2 from "../../assets/equipe.jpg";
-import colaborador3 from "../../assets/equipe.jpg";
+import colaborador1 from "../../assets/imagem1.jpg";
+import colaborador2 from "../../assets/imagem2.jpg";
+import colaborador3 from "../../assets/imagem3.jpg";
 import FooterPages from "../../components/Footer/FooterPages";
 import { HeaderCatalogPage } from "../../components/Header/HeaderCatalog";
 
@@ -79,7 +79,7 @@ function AboutPage() {
                 alt="Membro da Equipe 2"
                 className="w-32 h-32 mx-auto mb-4 rounded-full"
               />
-              <p className="font-semibold">SNOW</p>
+              <p className="font-semibold">Miguel</p>
               <p className="text-gray-600">CEO</p>
             </div>
           </div>

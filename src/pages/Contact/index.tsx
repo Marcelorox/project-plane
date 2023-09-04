@@ -9,15 +9,15 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-import { Header } from "../../components/Header";
-
+import FooterPages from "../../components/Footer/FooterPages";
+import { HeaderCatalogPage } from "../../components/Header/HeaderCatalog";
 
 const ContactPage: React.FC = () => {
   return (
     <>
-      <Header />
-      <div className="flex justify-center h-[100vh]">
-        <div className="flex mt-[6rem]">
+      <HeaderCatalogPage />
+      <div className="flex justify-center h-[90vh]">
+        <div className="flex mt-[2rem]">
           <Box p="4">
             <Heading className="flex justify-center" mb="4">
               Entre em Contato
@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
             </Flex>
           </Box>
         </div>
-        
+        <FooterPages />
       </div>
     </>
   );
