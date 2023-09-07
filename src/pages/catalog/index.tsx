@@ -5,6 +5,7 @@ import CatalogItem from "../../components/CatalogItem";
 import FilterBar from "../../components/FilterBar";
 import aviaoimg from "../../assets/aviao.jpg";
 import { HeaderCatalogPage } from "../../components/Header/HeaderCatalog";
+import { Link } from "react-router-dom";
 const CatalogPage: React.FC = () => {
   const items = [
     { name: "Avião A", imageUrl: aviaoimg, price: 1000000 },
@@ -31,12 +32,13 @@ const CatalogPage: React.FC = () => {
           </div>
           <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} gap={8}>
             {items.map((item, index) => (
-              <CatalogItem
-                key={index}
-                name={item.name}
-                imageUrl={item.imageUrl}
-                price={item.price}
-              />
+              <Link to={`/product/${item.name}`} key={index}>
+                <CatalogItem
+                  name={item.name}
+                  imageUrl={item.imageUrl}
+                  price={item.price}
+                />
+              </Link>
             ))}
           </SimpleGrid>
         </div>

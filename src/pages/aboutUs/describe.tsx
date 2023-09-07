@@ -1,10 +1,9 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import img from "../../assets/private-jet.jpg";
 import { motion, useAnimation } from "framer-motion";
-
 import { useInView } from "react-intersection-observer";
-
 import { useEffect } from "react";
+
 function DescribeHomePage() {
   const boxVariant = {
     hidden: {
@@ -33,7 +32,7 @@ function DescribeHomePage() {
       },
     },
   };
-
+  
   const control = useAnimation();
   const [ref, inView] = useInView();
 
