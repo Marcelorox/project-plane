@@ -23,7 +23,7 @@ const LuxurySection: React.FC = () => {
           infiniteLoop={true}
           showThumbs={false}
           showStatus={false}
-          interval={1800}
+          interval={1600}
         >
           <div>
             <img style={{ width: "80%" }} src={salavip2} alt="Sala de Luxo 2" />

@@ -9,7 +9,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 function Home() {
-
   const boxVariant = {
     hidden: {
       opacity: 0,
@@ -32,7 +31,7 @@ function Home() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.1,
+        duration: 0.05,
       },
     },
   };
@@ -51,7 +50,6 @@ function Home() {
     <>
       <main className="">
         <section className="relative top-0 left-0 flex w-full h-full mt-16 opacity-100 z-999">
-
           <div className="video-container">
             <video
               muted
@@ -63,9 +61,7 @@ function Home() {
           </div>
 
           <div className="absolute z-10 flex justify-center w-full h-full bg-black opacity-50">
-
             <div className=" items-center text-sm text-center mt-[28vh] flex flex-col text-white gap-4">
-
               <p className="max-w-md font-mono font-bold">
                 <motion.div
                   className="box"
@@ -78,23 +74,20 @@ function Home() {
                   PREMIUM SERVICE, SMOOTH FLIGHTS. CONTACT US TODAY.
                 </motion.div>
               </p>
-              
+
               <motion.div
-                className="box flex w-[96%] justify-center border-[1px] p-2 border-gray-900 inset-yellow-300 hover:bg-yellow-200 hover:text-black transition duration-300"
                 ref={ref}
+                className="box flex w-[96%] justify-center border-[1px] p-2 border-gray-900 inset-yellow-300 hover:bg-yellow-200 hover:text-black transition duration-300"
                 variants={buttonVariant}
                 initial="hidden"
                 animate={control}
               >
-                <Link className="" to={`/catalog`}>
+                <Link to={`/catalog`}>
                   <button>CATALOGO</button>
                 </Link>
               </motion.div>
-
             </div>
-
           </div>
-
         </section>
 
         <AboutUsHomePage />
@@ -102,9 +95,7 @@ function Home() {
         <Airplanes />
         <LuxurySection />
         <Footer />
-
       </main>
-
     </>
   );
 }

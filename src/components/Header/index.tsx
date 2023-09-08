@@ -25,7 +25,7 @@ function Header() {
 
   return (
     <>
-      <header className="flex fixed z-50 items-center justify-between w-full h-20 p-8 text-white bg-gray-900 border-b-[1px] font-custom">
+      <header className="flex md:flex-row sm:flex sm:flex-col sm:h-[8rem] fixed z-50 items-center md:justify-between sm:justify-normal w-full md:h-20 md:p-8 sm:p-1 text-white bg-gray-900 border-b-[1px] font-custom">
         <div className="flex items-center">
           <Link to="/">
             <img
@@ -34,7 +34,7 @@ function Header() {
               alt=""
             />
           </Link>
-          <span className="inline-block ml-6 text-lg tracking-wide text-white">
+          <span className="inline-block ml-6 tracking-wide text-white md:text-lg sm:text-sm">
             {sloganText.split("").map((letter, index) => (
               <span
                 key={index}
@@ -49,16 +49,16 @@ function Header() {
         </div>
 
         <div className="flex space-x-8 font-sans text-base">
-          <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
+          <span className="text-[14px] md:text-base transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
             <Link to={`/`}>Home</Link>
           </span>
-          <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
+          <span className="text-[14px] md:text-base transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
             <Link to={`/catalog`}>Catalog</Link>
           </span>
-          <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
+          <span className="text-[14px] md:text-base transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
             <Link to={`/contact`}>Contact</Link>
           </span>
-          <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
+          <span className="text-[14px] md:text-base transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
             <Link to={`/aboutPage`}>About Us</Link>
           </span>
         </div>

@@ -1,4 +1,5 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
+
 import img from "../../assets/private-jet.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -8,13 +9,13 @@ function DescribeHomePage() {
   const boxVariant = {
     hidden: {
       opacity: 0,
-      x: -100,
+      y: -40,
     },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
-        duration: 1.5,
+        duration: 1,
       },
     },
   };
@@ -22,17 +23,17 @@ function DescribeHomePage() {
   const imageVariant = {
     hidden: {
       opacity: 0,
-      x: 100,
+      y: 80,
     },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
-        duration: 1.5,
+        duration: 1,
       },
     },
   };
-  
+
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -45,13 +46,14 @@ function DescribeHomePage() {
   }, [control, inView]);
 
   return (
-    <Box py="8" bg="gray.100">
+    <Box py="8" bg="gray.100" width={"100vw"}>
       <Flex
         maxW="1200px"
         mx="auto"
         px="4"
         alignItems="center"
         justifyContent="space-between"
+        flexDirection={{ base: "column", md: "row" }}
       >
         <Box flex="1" pr="8">
           <motion.div
@@ -79,7 +81,7 @@ function DescribeHomePage() {
             </Text>
           </motion.div>
         </Box>
-        <Box flex="1">
+        <Box flex="1" marginTop={{ base: "10", md: "0" }}>
           <motion.div
             className="box"
             ref={ref}
