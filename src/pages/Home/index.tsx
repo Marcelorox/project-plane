@@ -49,7 +49,7 @@ function Home() {
   return (
     <>
       <main className="">
-        <section className="relative top-0 left-0 flex w-full h-full mt-16 opacity-100 z-999">
+        <section className="relative top-0 left-0 flex w-full h-full opacity-100 sm:mt-28 md:mt-20 z-999">
           <div className="video-container">
             <video
               muted
@@ -61,8 +61,8 @@ function Home() {
           </div>
 
           <div className="absolute z-10 flex justify-center w-full h-full bg-black opacity-50">
-            <div className=" items-center text-sm text-center mt-[28vh] flex flex-col text-white gap-4">
-              <p className="max-w-md font-mono font-bold">
+            <div className="items-center text-sm text-center sm:mt-[4rem] md:mt-[20vh] flex flex-col text-white gap-4">
+              <p className="max-w-md font-mono font-bold max-sm:text-sm">
                 <motion.div
                   className="box"
                   ref={ref}

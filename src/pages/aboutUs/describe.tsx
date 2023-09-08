@@ -46,7 +46,7 @@ function DescribeHomePage() {
   }, [control, inView]);
 
   return (
-    <Box py="8" bg="gray.100" width={"100vw"}>
+    <Box py={{ base: 1, md: 8 }} bg="gray.100" width={"100vw"}>
       <Flex
         maxW="1200px"
         mx="auto"

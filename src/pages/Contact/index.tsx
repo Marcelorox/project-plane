@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <HeaderCatalogPage />
-      <div className="flex justify-center h-[90vh]">
+      <div className="flex justify-center sm:h-[120vh] md:h-[90vh]">
         <div className="flex mt-[2rem]">
           <Box p="4">
             <Heading className="flex justify-center" mb="4">
