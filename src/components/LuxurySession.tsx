@@ -9,15 +9,11 @@ const LuxurySection: React.FC = () => {
   return (
     <Box bg="white" py={16}>
       <Box maxW="container.xl" mx="auto" textAlign="center">
-        <Heading
-          as="h2"
-          fontSize="4xl"
-          fontWeight="bold"
-          mb={8}
-          color="yellow.600"
+        <h2
+          className="text-4xl mb-12 font-normal"
         >
-          Salas VIPS exclusivas para nossos clientes
-        </Heading>
+          VIP ROOMS
+        </h2>
         <Carousel
           autoPlay={true}
           infiniteLoop={true}

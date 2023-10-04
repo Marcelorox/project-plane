@@ -5,7 +5,7 @@ import { Box, Image, Text, Badge } from "@chakra-ui/react";
 interface CatalogItemProps {
   name: string;
   imageUrl: string;
-  price: number;
+  price: string;
 }
 
 const CatalogItem: React.FC<CatalogItemProps> = ({ name, imageUrl, price }) => {
@@ -22,7 +22,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ name, imageUrl, price }) => {
         <Text fontWeight="semibold" fontSize="xl" mb="2">
           {name}
         </Text>
-        <Text color="gray.500">${price.toFixed(2)}</Text>
+        <Text color="gray.500">${price}</Text>
         <Badge colorScheme="blue" mt="2">
           Novo
         </Badge>

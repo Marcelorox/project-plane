@@ -1,72 +1,60 @@
 import { useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import AirplaneCard from "../../components/AirPlaneCard";
-import image from "../../assets/aviao.jpg";
+import gcImage from "../../assets/grand-caravan.jpg"
+import g6000Image from "../../assets/global6000.jpeg"
+import g650Image from "../../assets/g650.jpg"
+import kaImage from "../../assets/kingair.jpeg"
+
 function Airplanes() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-
-  const handleNextCard = () => {
-    const nextIndex = currentCardIndex + 1;
-    if (nextIndex < airplaneCards.length) {
-      setCurrentCardIndex(currentCardIndex + 1);
-    }
-  };
-  console.log(currentCardIndex);
-
-  const handlePreviousCard = () => {
-    const previousIndex = currentCardIndex - 1;
-    if (previousIndex >= 0) {
-      setCurrentCardIndex(previousIndex);
-    }
-  };
 
   const airplaneCards = [
     {
       id: "1",
-      name: "Antonov An-124 Ruslan.",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-      imageSrc: image,
+      name: "Grand Caravan",
+      description: "Alcance de 1.700km",
+      speed: "Até 340km/h",
+      imageSrc: gcImage,
       price: "5.000.000",
     },
     {
       id: "2",
-      name: "Antonov An-124 Ruslan.",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-      imageSrc: image,
+      name: "Global 6000",
+      description: "Alcance de 11.000km",
+      speed: "Até 900km/h",
+      imageSrc: g6000Image,
       price: "5.000.000",
     },
     {
       id: "3",
-      name: "Antonov An-124 Ruslan.",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-      imageSrc: image,
+      name: "Gulfstream G650",
+      description: "Alcance de 13.000km",
+      speed: "Até 950km/h",
+      imageSrc: g650Image,
       price: "5.000.000",
     },
     {
       id: "4",
-      name: "Antonov An-124 Ruslan.",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-      imageSrc: image,
+      name: "Kingair B200",
+      description: "Alcance de 3.200km",
+      speed: "Até 520km/h",
+      imageSrc: kaImage,
       price: "5.000.000",
     },
-  ];
+  ]
 
   return (
     <>
-      <div className="flex flex-col h-[100vh] w-[100vw] bg-gray-900 items-center">
+      <div className="flex flex-col h-[80vh] w-[100vw] bg-gray-900 items-center">
         <div className="relative flex flex-col items-center mt-16 ">
           <div className="">
-            <h1 className="text-white">PLANES</h1>
+            <h1 className="text-white text-4xl">OUR FLEET</h1>
           </div>
 
-          <div className="flex mt-24 max-w-[88vw] relative overflow-hidden">
+          <div className="flex mt-16 max-w-[88vw] relative overflow-hidden">
             <div
               className="flex transition-all duration-300 ease-in-out"
-              style={{ marginLeft: `-${currentCardIndex * 100}%` }}
             >
               {airplaneCards.map((card, index) => (
                 <AirplaneCard
@@ -75,25 +63,12 @@ function Airplanes() {
                   description={card.description}
                   imageSrc={card.imageSrc}
                   price={card.price}
+                  speed={card.speed}
                   id={card.id}
                 />
               ))}
             </div>
           </div>
-          <AiOutlineArrowLeft
-            onClick={handlePreviousCard}
-            className={`text-white absolute left-[1px] text-2xl cursor-pointer hover:text-gray-300 transition ${
-              currentCardIndex === 0 ? "hidden" : "block"
-            }`}
-          />
-          <AiOutlineArrowRight
-            onClick={handleNextCard}
-            className={`text-white text-2xl cursor-pointer absolute right-[1px] hover:text-gray-300 transition ${
-              currentCardIndex === airplaneCards.length - 1
-                ? "hidden"
-                : "block cursor-pointer"
-            }`}
-          />
         </div>
       </div>
     </>

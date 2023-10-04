@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function FooterPages() {
   return (
-    <footer className="absolute bottom-0 w-full py-6 text-white bg-gray-900">
+    <footer className="absolute bottom-0 w-full py-6 text-white bg-black">
       <div className="container flex items-center justify-between mx-auto">
         <div>
           <p className="ml-10">
-            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+            &copy; {new Date().getFullYear()} Eleve Aviation. All rights reserved.
           </p>
         </div>
         <div>

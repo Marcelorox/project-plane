@@ -8,6 +8,7 @@ import ContactPage from "./pages/Contact/index.tsx";
 import CatalogPage from "./pages/catalog/index.tsx";
 import AboutPage from "./pages/aboutUs/AboutUsPage.tsx";
 import ProductDetailPage from "./pages/catalog/ProductDetails.tsx";
+import ServicesPage from "./pages/services/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,12 @@ const router = createBrowserRouter([
     element: <ContactPage />,
   },
   {
-    path: "/aboutPage",
+    path: "/about-us",
     element: <AboutPage />,
+  },
+  {
+    path: "/services",
+    element: <ServicesPage />,
   },
   {
     path: "/product/:productName",
