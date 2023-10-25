@@ -46,7 +46,7 @@ function DescribeHomePage() {
   }, [control, inView]);
 
   return (
-    <Box py={{ base: 1, md: 8 }} bg="gray.100" width={"100vw"}>
+    <Box py={{ base: 1, md: 8 }} bg="white" width={"100vw"}>
       <Flex
         maxW="1200px"
         mx="auto"
@@ -63,21 +63,14 @@ function DescribeHomePage() {
             initial="hidden"
             animate={control}
           >
-            <Text fontSize="xl" fontWeight="bold" mb="4" color="yellow.500">
-              Sobre Nós
+            <Text fontSize="xl" fontWeight="medium" mb="4" color="yellow.600">
+              DELUXE FLIGHTS
             </Text>
-            <Text fontSize="lg" mb="6" color="gray.700" className="">
-              Na aircraft, a nossa paixão por aviões é refletida em cada detalhe
-              das aeronaves que oferecemos. Combinamos luxo e conforto para
-              proporcionar a você uma experiência única nos céus. Nossa
-              dedicação em fornecer aeronaves excepcionais é incomparável, e
-              nosso compromisso com a sua satisfação é absoluto.
+            <Text fontSize="lg" mb="6" color="black" className="">
+              Our deluxe services offer the best in the Air Taxi sector with luxury, safety, and speed. We provide a service designed to ensure our customers the utmost comfort, as well as all the conveniences that every traveler desires.
             </Text>
-            <Text fontSize="lg" color="gray.700" className="">
-              Desde os interiores elegantemente projetados até as mais recentes
-              inovações em tecnologia de aviação, cada aeronave em nosso
-              catálogo é selecionada com um critério rigoroso, garantindo que
-              você desfrute não apenas do voo, mas de um estilo de vida elevado.
+            <Text fontSize="lg" color="black" className="">
+              From elegantly designed interiors to the latest innovations in aviation technology, each aircraft in our catalog is selected with strict criteria, ensuring that you enjoy not only the flight but also an elevated lifestyle.
             </Text>
           </motion.div>
         </Box>

@@ -33,12 +33,12 @@ const FilterBar: React.FC = () => {
   };
 
   return (
-    <Box className="bg-gray-900" h="89vh" width={"25%"} p={4} shadow="md">
-      <VStack align="flex-start" spacing={4}>
-        <Text color="white" fontWeight="semibold" fontSize="lg">
-          Filtros
+    <Box className="bg-[#ffff]" h="120vh" mt="80px" width={"25%"} p={4} shadow="md">
+      <VStack align="flex-start" spacing={4} h="100%">
+        <Text color="black" fontWeight="semibold" fontSize="xl">
+          Filters
         </Text>
-        <Text color="yellow.400">Preço máximo: {formatCurrency(price)}</Text>
+        <Text color="yellow.600">Max price: {formatCurrency(price)}</Text>
         <Slider
           defaultValue={0}
           max={10000000}
@@ -46,16 +46,16 @@ const FilterBar: React.FC = () => {
           onChange={(value) => setPrice(value)}
         >
           <SliderTrack>
-            <SliderFilledTrack backgroundColor={"yellow.500"} />
+            <SliderFilledTrack backgroundColor={"black"} />
           </SliderTrack>
           <SliderThumb />
         </Slider>
         {aircraftTypes.map((type, index) => (
           <Checkbox
             key={index}
-            colorScheme="white"
+            colorScheme="yellow"
             defaultChecked={false}
-            color="white"
+            color="black"
           >
             {type}
           </Checkbox>

@@ -1,0 +1,24 @@
+GULFSTREAM G650:
+
+- ATÉ 19 PAX
+- APROX 515 KT CRUZEIRO = APROX 950KM/H
+-VOA ATÉ 51.000 FT
+- PERCORRE UMA DISTANCIA DE APROX 13.000 KM SEM PARADA
+
+GLOBAL 6000:
+-488 KT CRUZEIRO = 
+- VOA TÉ 51.000FT
+- ATÉ 19 PAX
+- ALCANCE ATÉ 11.000 KM
+
+KING AIR B200:
+- 280kt cruzeiro = aprox 520km/h
+- voa ate 29.000 ft
+- até 08 pax
+- alcance 3.200km
+
+GRAND CARAVAN:
+-vel cruz: 340km/h
+- até 14 passageiros
+-alcance 1.700km
+voa até 14.500 ft

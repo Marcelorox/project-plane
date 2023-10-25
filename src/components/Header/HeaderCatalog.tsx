@@ -25,7 +25,7 @@ function HeaderCatalogPage() {
             <Link to={`/contact`}>Contact</Link>
           </span>
           <span className="transition duration-300 cursor-pointer hover-underline hover:text-white hover:scale-110">
-            <Link to={`/aboutPage`}>About Us</Link>
+            <Link to={`/about-us`}>About Us</Link>
           </span>
         </div>
       </header>

@@ -11,12 +11,58 @@ import FooterPages from "../../components/Footer/FooterPages";
 import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import gcImage from "../../assets/grand-caravan.jpg"
+import g6000Image from "../../assets/global6000.jpeg"
+import g650Image from "../../assets/g650.jpg"
+import kaImage from "../../assets/kingair.jpeg"
+import { useParams } from "react-router"
+import { Header } from "../../components/Header";
+
+const airplaneCards = [
+  {
+    id: "1",
+    name: "Grand Caravan",
+    description: "Alcance de 1.700km",
+    speed: "Até 340km/h",
+    imageSrc: gcImage,
+    price: "5.000.000",
+  },
+  {
+    id: "2",
+    name: "Global 6000",
+    description: "Alcance de 11.000km",
+    speed: "Até 900km/h",
+    imageSrc: g6000Image,
+    price: "5.000.000",
+  },
+  {
+    id: "3",
+    name: "Gulfstream G650",
+    description: "Alcance de 13.000km",
+    speed: "Até 950km/h",
+    imageSrc: g650Image,
+    price: "5.000.000",
+  },
+  {
+    id: "4",
+    name: "Kingair B200",
+    description: "Alcance de 3.200km",
+    speed: "Até 520km/h",
+    imageSrc: kaImage,
+    price: "5.000.000",
+  },
+]
 
 const ProductDetailPage = () => {
+
+  const { slug } = useParams()
+
   return (
-    <>
-      <HeaderCatalogPage />
-      <Container maxW="4xl" mt={8}>
+    <div className="flex flex-col justify-between gap-32">
+      <div>
+        <Header />
+      </div>
+      <Container maxW="4xl">
         <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={8}>
           <GridItem>
             <Carousel
@@ -34,10 +80,9 @@ const ProductDetailPage = () => {
               />
             </Carousel>
           </GridItem>
-
           <GridItem>
             <Heading as="h1" size="xl" mb={4}>
-              Nome do produto
+              Nome do produto {slug}
             </Heading>
             <Text fontSize="lg" color="gray.600" mb={4}>
               Descricao do produto Lorem ipsum dolor sit amet, consectetur
@@ -113,10 +158,10 @@ const ProductDetailPage = () => {
           {/* Add customer reviews here */}
         </Box>
       </Container>
-      <div className="flex mt-16 md:mt-[5rem]">
+      <div className="flex mt-[300px] md:mt-[5rem]">
         <FooterPages />
       </div>
-    </>
+    </div>
   );
 };
 

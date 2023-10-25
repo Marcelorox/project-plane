@@ -7,6 +7,7 @@ interface Airplane {
   imageSrc: string;
   price: string;
   description: string;
+  speed: string
 }
 
 function AirplaneCard(props: Airplane) {
@@ -22,6 +23,9 @@ function AirplaneCard(props: Airplane) {
         </h2>
         <p className="mb-2 text-sm text-gray-500 text-start">
           {props.description}
+        </p>
+        <p className="mb-2 text-sm text-gray-500 text-start">
+          {props.speed}
         </p>
         <div className="flex flex-col items-center justify-between">
           <div className="flex w-full">
@@ -40,7 +44,7 @@ function AirplaneCard(props: Airplane) {
 
             <button className="flex items-center text-gray-800 transition-colors hover:text-yellow-600 focus:outline-none">
               <FaSearch className="w-5 h-5" />
-              <span className="ml-3 text-sm" id={props.id}>
+              <span className="ml-1 text-sm" id={props.id}>
                 Ver mais detalhes
               </span>
             </button>
